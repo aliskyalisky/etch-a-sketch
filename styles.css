@@ -29,6 +29,7 @@ body {
     background: url(./img/wood.png);
     backdrop-filter: blur(5px);
     overflow: auto;
+    overflow-y: hidden;
     
 }
 
