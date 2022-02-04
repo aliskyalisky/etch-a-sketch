@@ -73,6 +73,19 @@ for (let i = 0 ; i < gridItems.length; i++) {
 }
 }
 
+for (let i = 0 ; i < gridItems.length; i++) {
+    
+    gridItems[i].addEventListener('touchmove', (e) => {
+
+        if (currentTool === 1) {
+        gridItems[i].classList.add('grid-item-black');
+        }
+        if (currentTool === 2)
+        gridItems[i].classList.remove('grid-item-black');
+    });
+
+}
+
 function clearGrid() {
     gridContainer.innerHTML = '';
 }
